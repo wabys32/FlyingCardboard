@@ -24,7 +24,8 @@ html{
 	overscroll-behavior: none;
 }
 body, html{
-    overflow-x: hidden;
+    overflow: hidden;
+        overflow-y: auto;
 }
 body{
     margin: 0;
