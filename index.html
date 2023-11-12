@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="html_class">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Flying Cardboard</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="Images/logo1.png">
+</head>
+<body>
+    <div class="mobile_menu">
+        <div id="menu_button1" onclick="openWindow('index.html')">🏠 Home</div>
+        <div id="menu_button1" onclick="openWindow('games.html')">🎮 Games</div>
+        <div id="menu_button1" onclick="openWindow('privacy_policy.html')">🧾 Privacy Policy</div>
+    </div>
+
+
+    <div class="header">
+        <div class="logo_container">
+            <img src="Images/logo1.png" alt="logo">
+            <div class="logo"><p class="flying">Flying</p> <p class="cardboard">Cardboard</p></div>
+        </div>
+        <div class="nav">
+            <div class="l1"><a href="privacy_policy.html">Privacy Policy</a></div>
+            <div class="l1"><a href="games.html">Games</a></div>
+            <div class="l1"><a href="index.html">Home</a></div>
+        </div>
+        <div class="nav_mobile">
+            <button class="menu_button" onclick="openCloseMenu()">
+                <img src="Images/menu.png" alt="menu" style="position: relative; width: 100%;" id="menu_button">
+            </button>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="presentation">
+            <img src="Images/presentation1.png" class="presentation_image">
+        </div>
+        <div class="text_desc">
+            <p class="text_desc_title">Some Game Announcement</p>
+            <p class="text_desc_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <button class="button_default" onclick="openWindow('games.html')">Games</button>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="follow_us">Follow us:</div>
+        <div class="social_media_container">
+            <a href="" class="social_link">
+                <img src="Images/x.png" alt="X" title="X">
+            </a>
+            <a href="" class="social_link">
+                <img src="Images/reddit.png" alt="Reddit" title="Reddit">
+            </a>
+        </div>
+        <div class="contacts">Contact email: cardboardflying@gmail.com</div>
+        <hr>
+        <div class="copyright_container">©<span id="year"></span> Flying Cardboard</div>
+    </div>
+
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
