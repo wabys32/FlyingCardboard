@@ -382,7 +382,6 @@ a{
 .menu_button{
     width: 50px;
     height: 50px;
-    font-size: 20px;
     position: absolute;
     background-color: transparent;
     z-index: 1000;
