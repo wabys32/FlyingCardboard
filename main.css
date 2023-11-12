@@ -208,6 +208,9 @@ body {
     hr{
         width: 250px;
     }
+    .logotype{
+        width: 50%;
+    }
 }
 @media (min-width: 600px) {
     #cards { grid-template-columns: repeat(2, 1fr); }
@@ -310,6 +313,9 @@ body {
     }
 }
 
+.logotype{
+    object-fit: contain;
+}
 
 #card{
     color: white;
