@@ -30,3 +30,44 @@ function openCloseMenu(){
 
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+var fullUrl = window.location.href;
+var pageName = fullUrl.split('/').pop();
+
+
+function getRandomEmoji() {
+    const emojis = ["📦"];
+    const randomIndex = Math.floor(Math.random() * emojis.length);
+    return emojis[randomIndex];
+}
+
+function createEmoji() {
+    const emoji = document.createElement("div");
+    emoji.className = "emoji";
+    emoji.innerHTML = getRandomEmoji();
+    document.body.appendChild(emoji);
+
+    const startPosition = Math.random() * window.innerWidth;
+    const animationDuration = Math.random() * 3 + 2;
+
+    emoji.style.left = startPosition + "px";
+
+    emoji.animate(
+        [
+            { top: "-50px" },
+            { top: window.innerHeight+200 + "px" }
+        ],
+        {
+            duration: animationDuration * 1500,
+            easing: "linear",
+            fill: "forwards"
+        }
+    ).onfinish = function () {
+        document.body.removeChild(emoji);
+    };
+}
+
+if(pageName!="privacy_policy.html"){
+    setInterval(createEmoji, 500);
+}
+
