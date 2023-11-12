@@ -447,3 +447,10 @@ a{
 #menu_button1:hover{
 	background-color: rgb(240, 240, 240);
 }
+
+.emoji {
+    position: absolute;
+    font-size: 24px;
+    opacity: 0.2;
+    z-index: -999;
+}
