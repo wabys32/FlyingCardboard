@@ -6,6 +6,10 @@ var html_class = document.getElementsByClassName("html_class")
 var menu_button = document.getElementById("menu_button")
 
 function openWindow(str){
+    window.open("https://" + str, "_blank");
+}
+
+function openLocation(str){
     window.location.href = str;
 }
 
@@ -51,6 +55,7 @@ function createEmoji() {
     const animationDuration = Math.random() * 3 + 2;
 
     emoji.style.left = startPosition + "px";
+    emoji.style.userSelect = "none"
 
     emoji.animate(
         [
