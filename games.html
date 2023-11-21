@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="html_class">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Flying Cardboard</title>
     <link rel="stylesheet" href="main.css">
@@ -17,7 +17,7 @@
 
     <div class="header">
         <div class="logo_container">
-            <img class="logotype" src="Images/logo2.png" alt="logo">
+            <img class="logotype" src="Images/logo2.png" alt="logo" onclick="openLocation('index.html')">
         </div>
         <div class="nav">
             <div class="l1"><a href="privacy_policy.html">Privacy Policy</a></div>
@@ -34,12 +34,13 @@
     <div style="width: 100%; position: relative; text-align: center;">
       <p style="font-size: 37px; color: dimgray;">|Games List|</p>
     </div>
-
+    
     <div class="main">
       <div id="cards">
         <div id="card">
-          <img class="open_image" src="Images/Extenuating_circumstances_sample_letter.png" alt="image">
-          <button class="open_button">Open in Play Market</button>
+            <p class="banner_title">Ring Control</p>
+          <img class="open_image" src="Images/wb_ringControl.png" alt="image">
+          <button class="open_button" onclick="openWindow('play.google.com/store/apps/details?id=com.FlyingCardboard.RingControl')">Open in Play Market</button>
         </div>
     </div>
         
