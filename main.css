@@ -467,10 +467,12 @@ a{
 
 .banner_title{
     color: black;
-    text-align: center;
     font-weight: bolder;
     font-family: 'PTMono-Regular', sans-serif;
-    padding-bottom: 16px;
     margin: 0 auto;
+    margin-bottom: 14px;
     font-size: 20px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
 }
